@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice to voiceless</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?
+   family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks" >
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">LEARNING</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+               </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>LEARNING</h1>
+    </section>
+    <!-----------Learning------->
+    <section class="course">
+        <h1>MY SPACE</h1>
+        <p>Account Status </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Profile Name</h3>
+                <p> Personalised Digital Landscape </p>
+              
+            </div>
+            <div class="course-col">
+                <h3>My Journey</h3>
+                <p>  Progress,Watch History,Timeline  </p>
+            </div>
+            <div class="course-col">
+                <h3>Certifications</h3>
+                <p>collabs,accomplishments </p>
+            </div>
+        </div>    
+    </section> 
+    <!----------facilities------->
+    <section class="facilities">
+        <h1>OUR FACILITIES</h1>
+        <p> facilities we provide </p>
+        <div class="row">
+            <div class="facilities-col">
+                <a href="file:///Users/shivaram/Desktop/Fraud%20Detection%20in%20Online%20Product%20Review%20Systems%20-%20Login_files/text.html"> <img src="images/dumb.jpeg"></a>
+                <h3>Speech To Text</h3>
+                <p>Talk and let the website transcribe</p>
+    
+            </div>
+       
+            <div class="facilities-col">
+                <a href="file:///Users/shivaram/Desktop/Fraud%20Detection%20in%20Online%20Product%20Review%20Systems%20-%20Login_files/school.html" target="main"><img src="images/deaf.jpeg"></a>
+                <h3>Best learning videos</h3>
+                <p>Visual Wisdom:Learn More Faster With the best Videos</p>
+    
+            </div>
+    
+            <div class="facilities-col">
+                <img src="images/bell.jpg">
+                <h3>Notifications</h3>
+                <p>notification:Tiny reminders,big impact</p>
+    
+            </div>
+        </div>
+    </section>
+    
+
+<!-----footer------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p> This  website is more than technology , it  is a  testament to our commintment to support and change the world</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      
+    </div>
+    <p> made with<i class="fa fa-heart-o"></i>by IARE CLG</p>
+</section>
+<!---------javascript for toggle Menu-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
