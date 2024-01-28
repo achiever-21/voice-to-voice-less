@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice to voiceless</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?
+   family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks" >
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">LEARNING</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+               </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1 ABOUT US></h1>
+    </section>
+    <!-------about us content------->
+ <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>we are here to convey ur words</h1>
+            <p>
+                in a world filled with voices and perspectives, there remain those whose  
+voices are seldom heard, whose experiences are marginalized, and  
+whose challenges often go unnoticed. The "Voice to Voiceless" app  
+emerges as a beacon of hope, a digital platform meticulously crafted to  
+empower those who have been silenced for far too long. 
+The "Voice to Voiceless" app is not just another mobile application; it's a  
+lifeline for the voiceless. It embodies the spirit of inclusivity, empathy,  
+and support, driven by the singular goal of amplifying the voices of  
+marginalized individuals and communities. It is a testament to the power  
+of technology harnessed for the greater good, a tool designed to foster  
+positive change in a world that urgently needs it.
+            </p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+        <img src="images/co.jpg">
+        </div>
+        
+    </div>
+
+ </section>
+
+<!-----footer------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p> This  website is more than technology , it  is a  testament to our commintment to support and change the world</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      
+    </div>
+    <p> made with<i class="fa fa-heart-o"></i>by IARE CLG</p>
+</section>
+<!---------javascript for toggle Menu-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
