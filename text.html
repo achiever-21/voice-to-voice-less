@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text in Multiple Languages</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background: url('images/vth.jpg') center/cover no-repeat;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        select {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            
+        }
+        button{
+            margin-bottom:350PX ;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <h1>Voice to Text in Multiple Languages</h1>
+    <label for="language"><h2>Select Language:</h2></label>
+    <select id="language">
+        <option value="en-US">English</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="te">telugu</option>
+        <option value="kn">kannada</option>
+        <!-- Add more language options as needed -->
+    </select>
+    <button onclick="startListening()">Start Listening</button>
+    <p id="result"></p>
+
+    <script>
+        const languageSelect = document.getElementById('language');
+        const resultElement = document.getElementById('result');
+        let recognition;
+
+        function initRecognition() {
+            recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+            recognition.lang = languageSelect.value;
+
+            recognition.onresult = function (event) {
+                const transcript = event.results[0][0].transcript;
+                resultElement.innerText = `You said: ${transcript}`;
+            };
+        }
+
+        function startListening() {
+            if (!recognition) {
+                initRecognition();
+            }
+
+            recognition.lang = languageSelect.value;
+            recognition.start();
+        }
+    </script>
+</body>
+</html>
